@@ -33,12 +33,12 @@
         }
 
         .splash-icon {
-            width: 96px;
-            height: 96px;
-            border-radius: 22px;
+            width: 84px;
+            height: 84px;
+            border-radius: 20px;
             object-fit: cover;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
-            margin-bottom: 20px;
+            box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 16px;
             background: #fff;
             border: 1px solid var(--border-color);
         }
@@ -75,12 +75,6 @@
             border-bottom: 1px solid var(--border-color);
         }
 
-        h3 {
-            color: var(--primary);
-            font-size: 1.05rem;
-            margin: 20px 0 8px 0;
-        }
-
         ul {
             padding-left: 20px;
             margin: 0 0 16px 0;
@@ -106,12 +100,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: transform 0.15s ease, box-shadow 0.15s ease;
-        }
-
-        .collection-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
         }
 
         .card-header {
@@ -149,10 +137,6 @@
             margin-bottom: 4px;
         }
 
-        .card-list li:last-child {
-            margin-bottom: 0;
-        }
-
         a {
             color: #0284c7;
             text-decoration: none;
@@ -180,7 +164,7 @@
 <body>
 
     <header>
-        <img src="splash_icon.png" alt="AUMly Splash Icon" class="splash_icon" width="1024" height="1024" onerror="this.style.display='none'">
+        <img src="splash_icon.png" alt="AUMly Splash Icon" class="splash-icon" onerror="this.style.display='none'">
         <h1>AUMly</h1>
         <p class="tagline">Gitas, Upanishads, Yoga Sūtras, and Classical Wisdom Reader</p>
     </header>
@@ -197,89 +181,50 @@
     <section>
         <h2>Featured Library Collections</h2>
         <div class="collections-grid">
-            <!-- Gitas -->
             <div class="collection-card">
                 <div>
-                    <div class="card-header">
-                        <span class="card-title">Gitas</span>
-                        <span class="count-badge">5 texts</span>
-                    </div>
+                    <div class="card-header"><span class="card-title">Gitas</span><span class="count-badge">5 texts</span></div>
                     <ul class="card-list">
-                        <li>Bhagavad Gita</li>
-                        <li>Ashtavakra Gita</li>
-                        <li>Avadhuta Gita</li>
-                        <li>Ishvara Gita</li>
-                        <li>Uddhava Gita</li>
+                        <li>Bhagavad Gita</li><li>Ashtavakra Gita</li><li>Avadhuta Gita</li><li>Ishvara Gita</li><li>Uddhava Gita</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Upanishads -->
             <div class="collection-card">
                 <div>
-                    <div class="card-header">
-                        <span class="card-title">Upanishads</span>
-                        <span class="count-badge">13 texts</span>
-                    </div>
+                    <div class="card-header"><span class="card-title">Upanishads</span><span class="count-badge">13 texts</span></div>
                     <ul class="card-list">
                         <li><strong>13 Principal Upanishads</strong></li>
-                        <li style="font-size: 0.8rem; color: #94a3b8; margin-top: 4px;">īśā, kaṭha, praśna, muṇḍaka, māṇḍūkya, aitareya, taittirīya, chāndogya, bṛhadāraṇyaka, kena, kaivalya, śvetāśvatara, mahā-nārāyaṇa</li>
+                        <li style="font-size: 0.78rem; color: #94a3b8; margin-top: 4px;">īśā, kaṭha, praśna, muṇḍaka, māṇḍūkya, aitareya, taittirīya, chāndogya, bṛhadāraṇyaka, kena, kaivalya, śvetāśvatara, mahā-nārāyaṇa</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Yoga & Darśana Sūtras -->
             <div class="collection-card">
                 <div>
-                    <div class="card-header">
-                        <span class="card-title">Yoga & Darśana Sūtras</span>
-                        <span class="count-badge">2 texts</span>
-                    </div>
-                    <ul class="card-list">
-                        <li>Patañjali Yoga Sūtras</li>
-                        <li>Sankhya Karika</li>
-                    </ul>
+                    <div class="card-header"><span class="card-title">Yoga & Darśana Sūtras</span><span class="count-badge">2 texts</span></div>
+                    <ul class="card-list"><li>Patañjali Yoga Sūtras</li><li>Sankhya Karika</li></ul>
                 </div>
             </div>
 
-            <!-- Shaiva & Tantras -->
             <div class="collection-card">
                 <div>
-                    <div class="card-header">
-                        <span class="card-title">Shaiva & Tantras</span>
-                        <span class="count-badge">2 texts</span>
-                    </div>
-                    <ul class="card-list">
-                        <li>Siva Sutra</li>
-                        <li>Vijñāna Bhairava Tantra</li>
-                    </ul>
+                    <div class="card-header"><span class="card-title">Shaiva & Tantras</span><span class="count-badge">2 texts</span></div>
+                    <ul class="card-list"><li>Siva Sutra</li><li>Vijñāna Bhairava Tantra</li></ul>
                 </div>
             </div>
 
-            <!-- Stotras & Hymns -->
             <div class="collection-card">
                 <div>
-                    <div class="card-header">
-                        <span class="card-title">Stotras & Hymns</span>
-                        <span class="count-badge">2 texts</span>
-                    </div>
-                    <ul class="card-list">
-                        <li>Dakṣiṇāmūrti Stotram</li>
-                        <li>Nirvāṇa Ṣaṭkam</li>
-                    </ul>
+                    <div class="card-header"><span class="card-title">Stotras & Hymns</span><span class="count-badge">2 texts</span></div>
+                    <ul class="card-list"><li>Dakṣiṇāmūrti Stotram</li><li>Nirvāṇa Ṣaṭkam</li></ul>
                 </div>
             </div>
 
-            <!-- Vedanta -->
             <div class="collection-card">
                 <div>
-                    <div class="card-header">
-                        <span class="card-title">Vedanta</span>
-                        <span class="count-badge">1 text</span>
-                    </div>
-                    <ul class="card-list">
-                        <li>Vivekacudamani</li>
-                    </ul>
+                    <div class="card-header"><span class="card-title">Vedanta</span><span class="count-badge">1 text</span></div>
+                    <ul class="card-list"><li>Vivekacudamani</li></ul>
                 </div>
             </div>
         </div>
